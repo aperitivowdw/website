@@ -347,26 +347,26 @@ input:focus, textarea:focus {
       @media only screen and (max-width: 767px) {
         .header-area .viral-news-main-menu .classy-navbar-toggler {
           margin: 0 auto; } }
-      .header-area .viral-news-main-menu .classy-navbar .classynav {
-        margin-left: 20px; }
-        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a {
-          font-weight: 700; }
-          .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
-            color: #ee9202;
-            font-weight: 700; }
-        .header-area .viral-news-main-menu .classy-navbar .classynav ul li.active a {
+      .header-area .viral-news-main-menu .classy-navbar .classynav ul li a {
+        font-weight: 700; }
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a i {
+          margin-right: 5px; }
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
           color: #ee9202;
-          border-bottom: 4px solid #ee9202; }
-        .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a {
-          text-transform: uppercase;
-          padding: 12px 12px 11px;
-          background-color: transparent;
-          line-height: 1;
-          color: #231f1f;
-          font-weight: 700;
-          font-size: 18px; }
-          .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a:focus {
-            color: #ee9202; }
+          font-weight: 700; }
+      .header-area .viral-news-main-menu .classy-navbar .classynav ul li.active a {
+        color: #ee9202;
+        border-bottom: 4px solid #ee9202; }
+      .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a {
+        text-transform: uppercase;
+        padding: 12px 12px 11px;
+        background-color: transparent;
+        line-height: 1;
+        color: #231f1f;
+        font-weight: 700;
+        font-size: 18px; }
+        .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav > ul > li > a:focus {
+          color: #ee9202; }
     .header-area .viral-news-main-menu .search-btn {
       padding: 15px 40px;
       display: block;
@@ -1346,8 +1346,15 @@ input:focus, textarea:focus {
   transition-duration: 500ms; }
 
 .contact-area {
+  padding-top: 380px;
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 991px) {
+    .contact-area {
+      padding-top: 250px; } }
+  @media only screen and (max-width: 767px) {
+    .contact-area {
+      padding-top: 150px; } }
   .contact-area .contact-title h4 {
     color: #393939;
     margin-bottom: 70px; }

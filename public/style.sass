@@ -399,10 +399,12 @@ input:focus, textarea:focus
           margin: 0 auto
 
       .classynav
-        margin-left: 20px
         ul li
           a
             font-weight: 700
+
+            i
+              margin-right: 5px
 
             &:hover, &:focus
               color: $aperitivo
@@ -1619,8 +1621,13 @@ input:focus, textarea:focus
     transition-duration: 500ms
 
 .contact-area
+  padding-top: 380px
   position: relative
   z-index: 1
+  @media only screen and (max-width: 991px)
+    padding-top: 250px
+  @media only screen and (max-width: 767px)
+    padding-top: 150px
 
   .contact-title h4
     color: #393939
