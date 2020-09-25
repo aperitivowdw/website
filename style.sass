@@ -26,7 +26,8 @@
 
 $pink: #e20378
 $black: #212529
-$aperitivo:	#ee9202
+$aperitivo:	#feae04
+$aperitivo-light: #fcb418
 
 .pink
   color: $pink
@@ -110,6 +111,8 @@ img.post-pic
   padding: 10px 20px 10px 0
   max-width: 500px
   float: left
+  @media only screen and (max-width: 767px)
+    max-width: 221px
 
 
 /* Spacing
@@ -203,10 +206,11 @@ img.post-pic
   padding-top: 100px
   padding-bottom: 100px
 
-.section-padding-330
-  padding-top: 330px
+.section-padding-280
+  padding-top: 280px
   padding-bottom: 100px
-
+  @media only screen and (max-width: 991px)
+    padding-top: 120px
 
 /* Miscellaneous
 
@@ -390,7 +394,7 @@ input:focus, textarea:focus
         h4
           display: none
     .classy-navbar
-      height: 100px
+      height: 120px
       padding: 0
       background-color: #fff
 
@@ -401,30 +405,31 @@ input:focus, textarea:focus
       .classynav
         ul li
           a
+            background-color: $aperitivo
+            border: none
+            color: $black
+            padding: 10px 32px 20px 32px
+            text-align: center
+            text-decoration: none
+            display: inline-block
+            font-size: 16px
+            height: 50px
             font-weight: 700
+
+            &:hover, &:focus
+              background-color: $aperitivo-light
+              color: #fff
 
             i
               margin-right: 5px
-
-            &:hover, &:focus
-              color: $aperitivo
-              font-weight: 700
 
           &.active a
             color: $aperitivo
             border-bottom: 4px solid $aperitivo
 
-        > ul > li > a
-          text-transform: uppercase
-          padding: 12px 12px 11px
-          background-color: transparent
-          line-height: 1
-          color: #231f1f
-          font-weight: 700
-          font-size: 18px
-
-          &:hover, &:focus
-            color: $aperitivo
+          @media only screen and (max-width: 991px)
+            a
+              margin: 10px 0
 
     .search-btn
       padding: 15px 40px
@@ -579,7 +584,7 @@ input:focus, textarea:focus
 /* :: 6.0 Welcome Slides Area
 
 .welcome-slide-area
-  padding: 320px 0 90px
+  padding: 280px 0 90px
   position: relative
   z-index: 1
 
@@ -1190,7 +1195,9 @@ input:focus, textarea:focus
 .catagory-featured-post
   position: relative
   z-index: 1
-  margin-top: 230px
+  margin-top: 180px
+  @media only screen and (max-width: 767px)
+    margin-top: 0
 
   .cata-content
     .post-catagory
@@ -1631,8 +1638,18 @@ input:focus, textarea:focus
 
   .contact-title h4
     color: #393939
-    margin-bottom: 70px
+    margin-bottom: 30px
 
+  p
+    font-size: 18px
+
+  a.social-link
+    font-size: 30px
+    color: $black
+    font-weight: 700
+
+    i
+      margin-right: 10px
 @media only screen and (max-width: 767px)
   .contact-info-details
     -ms-flex-wrap: wrap
