@@ -1357,7 +1357,7 @@ input:focus, textarea:focus {
   transition-duration: 500ms; }
 
 .contact-area {
-  padding-top: 380px;
+  padding-top: 300px;
   position: relative;
   z-index: 1; }
   @media only screen and (max-width: 991px) {
