@@ -28,6 +28,7 @@ $pink: #e20378
 $black: #212529
 $aperitivo:	#feae04
 $aperitivo-light: #fcb418
+$blue: #1a1b49
 
 .pink
   color: $pink
@@ -72,7 +73,7 @@ h1, h2, h3, h4, h5, h6
 
 p
   color: $black
-  font-size: 14px
+  font-size: 16px
   line-height: 2
   font-weight: 100
 
@@ -208,7 +209,7 @@ img.post-pic
   padding-bottom: 100px
 
 .section-padding-280
-  padding-top: 280px
+  padding-top: 370px
   padding-bottom: 100px
   @media only screen and (max-width: 991px)
     padding-top: 120px
@@ -395,13 +396,16 @@ input:focus, textarea:focus
         h4
           display: none
     .classy-navbar
-      height: 120px
+      height: 160px
       padding: 0
-      background-color: #fff
+      background-color: $blue
 
       &-toggler
         @media only screen and (max-width: 767px)
           margin: 0 auto
+
+      .classy-menu
+        margin: 0 auto
 
       .classynav
         ul li
@@ -585,7 +589,7 @@ input:focus, textarea:focus
 /* :: 6.0 Welcome Slides Area
 
 .welcome-slide-area
-  padding: 280px 0 90px
+  padding: 400px 0 90px
   position: relative
   z-index: 1
 
@@ -683,12 +687,15 @@ input:focus, textarea:focus
 .sidebar-area
   .add-widget
     a.social-link
-      font-size: 30px
+      font-size: 24px
       color: $black
       font-weight: 700
-    
+
     i
       margin-right: 10px
+
+    a.social-link:hover
+      color: $aperitivo
 
 
 .single-blog-post
@@ -1196,7 +1203,7 @@ input:focus, textarea:focus
 .catagory-featured-post
   position: relative
   z-index: 1
-  margin-top: 180px
+  margin-top: 270px
   @media only screen and (max-width: 767px)
     margin-top: 0
 
