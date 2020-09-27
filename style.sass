@@ -87,18 +87,19 @@ a
 b, strong
   font-weight: 700
 
-  &:hover, &:focus
-    -webkit-transition-duration: 200ms
-    transition-duration: 200ms
-    text-decoration: none
-    outline: 0 solid transparent
-    color: $aperitivo
-
 ul, ol
   margin: 0
 
 ul li, ol li
   list-style: none
+  color: $black
+  font-weight: 400
+
+.post-meta > ul, ol
+  margin-left: 20px !important
+
+.post-meta > ul li, ol li
+  list-style: disc !important
   color: $black
   font-weight: 400
 

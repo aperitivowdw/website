@@ -67,18 +67,20 @@ a {
 
 b, strong {
   font-weight: 700; }
-  b:hover, b:focus, strong:hover, strong:focus {
-    -webkit-transition-duration: 200ms;
-    transition-duration: 200ms;
-    text-decoration: none;
-    outline: 0 solid transparent;
-    color: #feae04; }
 
 ul, ol {
   margin: 0; }
 
 ul li, ol li {
   list-style: none;
+  color: #212529;
+  font-weight: 400; }
+
+.post-meta > ul, ol {
+  margin-left: 20px !important; }
+
+.post-meta > ul li, ol li {
+  list-style: disc !important;
   color: #212529;
   font-weight: 400; }
 
