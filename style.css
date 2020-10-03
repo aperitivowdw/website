@@ -57,7 +57,7 @@ p {
   line-height: 2;
   font-weight: 100; }
   p.small {
-    font-size: 10px; }
+    font-size: 10px !important; }
 
 a {
   -webkit-transition-duration: 200ms;
@@ -370,7 +370,7 @@ input:focus, textarea:focus {
       height: 160px;
       padding: 0;
       background-color: #1a1b49; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 992px) {
         .header-area .viral-news-main-menu .classy-navbar-toggler {
           margin: 0 auto; } }
       .header-area .viral-news-main-menu .classy-navbar .classy-menu {
@@ -545,7 +545,7 @@ input:focus, textarea:focus {
     .single-welcome-slide .welcome-post img {
       -webkit-transition-duration: 600ms;
       transition-duration: 600ms;
-      max-height: 416px;
+      max-height: 455px;
       object-fit: cover; }
     .single-welcome-slide .welcome-post:hover img {
       -webkit-transform: scale(1.1);
