@@ -542,10 +542,12 @@ input:focus, textarea:focus {
     position: relative;
     z-index: 1;
     overflow: hidden; }
+    .single-welcome-slide .welcome-post--minor {
+      max-height: 228px; }
     .single-welcome-slide .welcome-post img {
       -webkit-transition-duration: 600ms;
       transition-duration: 600ms;
-      max-height: 455px;
+      max-height: 456px;
       object-fit: cover; }
     .single-welcome-slide .welcome-post:hover img {
       -webkit-transform: scale(1.1);
