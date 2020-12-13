@@ -548,7 +548,8 @@ input:focus, textarea:focus {
       -webkit-transition-duration: 600ms;
       transition-duration: 600ms;
       max-height: 456px;
-      object-fit: cover; }
+      object-fit: cover;
+      min-height: 475px; }
     .single-welcome-slide .welcome-post:hover img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
@@ -601,12 +602,21 @@ input:focus, textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .single-welcome-slide .welcome-post .post-content .post-title {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .single-welcome-slide .welcome-post img {
+    min-height: 0; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-post img {
+    min-height: 0; }
+
   .welcome-posts-- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+.breakpoint-on .classy-navbar .classy-menu {
+  background-color: #1a1b49; }
+
 /* :: 7.0 Blog Post Area */
 .sidebar-area .add-widget a.social-link {
   font-size: 24px;

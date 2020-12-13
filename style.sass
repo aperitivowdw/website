@@ -638,6 +638,7 @@ input:focus, textarea:focus
       transition-duration: 600ms
       max-height: 456px
       object-fit: cover
+      min-height: 475px
 
     &:hover img
       -webkit-transform: scale(1.1)
@@ -705,11 +706,22 @@ input:focus, textarea:focus
   .single-welcome-slide .welcome-post .post-content .post-title
     font-size: 18px
 
+  .single-welcome-slide .welcome-post
+    img
+      min-height: 0
+
 @media only screen and (min-width: 768px) and (max-width: 991px)
+  .single-welcome-slide .welcome-post
+    img
+      min-height: 0
+
   .welcome-posts--
     display: -webkit-box
     display: -ms-flexbox
     display: flex
+
+.breakpoint-on .classy-navbar .classy-menu
+  background-color: $blue
 
 /* :: 7.0 Blog Post Area
 .sidebar-area
