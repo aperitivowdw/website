@@ -745,7 +745,7 @@ input:focus, textarea:focus {
         -webkit-transition-duration: 200ms;
         transition-duration: 200ms;
         line-height: 1.5;
-        font-size: 24px;
+        font-size: 16px;
         color: #231f1f; }
         .single-blog-post.style-3 .post-data .post-title h6:hover, .single-blog-post.style-3 .post-data .post-title h6:focus {
           color: #feae04; }
