@@ -64,8 +64,7 @@ a {
   transition-duration: 200ms;
   text-decoration: none;
   text-decoration-line: none;
-  outline: 0 solid transparent;
-  color: #feae04; }
+  outline: 0 solid transparent; }
 
 b, strong {
   font-weight: 700; }
@@ -385,10 +384,12 @@ input:focus, textarea:focus {
         display: inline-block;
         font-size: 16px;
         height: 50px;
-        font-weight: 700; }
+        font-weight: 700;
+        border-radius: 8px; }
         .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
           background-color: #fcb418;
-          color: #fff; }
+          border-radius: 8px;
+          background-color: #fff; }
         .header-area .viral-news-main-menu .classy-navbar .classynav ul li a i {
           margin-right: 5px; }
       .header-area .viral-news-main-menu .classy-navbar .classynav ul li.active a {
@@ -530,10 +531,10 @@ input:focus, textarea:focus {
   z-index: 1; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .welcome-slide-area {
-      padding: 20px 0 90px; } }
+      padding: 120px 0 90px; } }
   @media only screen and (max-width: 767px) {
     .welcome-slide-area {
-      padding: 120px 0 90px; } }
+      padding: 80px 0 90px; } }
 
 .single-welcome-slide {
   position: relative;
@@ -618,14 +619,20 @@ input:focus, textarea:focus {
   background-color: #1a1b49; }
 
 /* :: 7.0 Blog Post Area */
-.sidebar-area .add-widget a.social-link {
-  font-size: 24px;
-  color: #212529;
-  font-weight: 700; }
-.sidebar-area .add-widget i {
-  margin-right: 10px; }
-.sidebar-area .add-widget a.social-link:hover {
-  color: #feae04; }
+.sidebar-area {
+  border: 1px solid #212529;
+  padding: 15px;
+  border-radius: 8px; }
+  .sidebar-area .add-widget p {
+    font-size: 14px; }
+  .sidebar-area .add-widget a.social-link {
+    font-size: 16px;
+    color: #212529;
+    margin-left: 20px; }
+  .sidebar-area .add-widget i {
+    margin-right: 10px; }
+  .sidebar-area .add-widget a.social-link:hover {
+    color: #feae04; }
 
 .single-blog-post {
   position: relative;
@@ -641,7 +648,8 @@ input:focus, textarea:focus {
     .single-blog-post .post-thumb img {
       height: 259px;
       width: 350px;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 8px; }
   .single-blog-post .post-data {
     margin-left: 20px; }
     .single-blog-post .post-data .post-catagory {

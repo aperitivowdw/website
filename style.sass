@@ -29,6 +29,7 @@ $black: #212529
 $aperitivo:	#feae04
 $aperitivo-light: #fcb418
 $blue: #1a1b49
+$white: #fff
 
 .pink
   color: $pink
@@ -86,7 +87,6 @@ a
   text-decoration: none
   text-decoration-line: none
   outline: 0 solid transparent
-  color: $aperitivo
 
 b, strong
   font-weight: 700
@@ -442,10 +442,12 @@ input:focus, textarea:focus
             font-size: 16px
             height: 50px
             font-weight: 700
+            border-radius: 8px
 
             &:hover, &:focus
               background-color: $aperitivo-light
-              color: #fff
+              border-radius: 8px
+              background-color: $white
 
             i
               margin-right: 5px
@@ -616,10 +618,10 @@ input:focus, textarea:focus
   z-index: 1
 
   @media only screen and (min-width: 768px) and (max-width: 991px)
-    padding: 20px 0 90px
+    padding: 120px 0 90px
 
   @media only screen and (max-width: 767px)
-    padding: 120px 0 90px
+    padding: 80px 0 90px
 
 .single-welcome-slide
   position: relative
@@ -725,12 +727,18 @@ input:focus, textarea:focus
 
 /* :: 7.0 Blog Post Area
 .sidebar-area
-  .add-widget
-    a.social-link
-      font-size: 24px
-      color: $black
-      font-weight: 700
+  border: 1px solid $black
+  padding: 15px
+  border-radius: 8px
 
+  .add-widget
+    p
+      font-size: 14px
+
+    a.social-link
+      font-size: 16px
+      color: $black
+      margin-left: 20px
     i
       margin-right: 10px
 
@@ -756,6 +764,7 @@ input:focus, textarea:focus
       height: 259px
       width: 350px
       object-fit: cover
+      border-radius: 8px
 
   .post-data
     margin-left: 20px
