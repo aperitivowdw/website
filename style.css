@@ -385,7 +385,8 @@ input:focus, textarea:focus {
         font-size: 16px;
         height: 50px;
         font-weight: 700;
-        border-radius: 8px; }
+        border-radius: 8px;
+        transition: 0.5s; }
         .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
           background-color: #fcb418;
           border-radius: 8px;
@@ -622,7 +623,8 @@ input:focus, textarea:focus {
 .sidebar-area {
   border: 1px solid #212529;
   padding: 15px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
   .sidebar-area .add-widget p {
     font-size: 14px; }
   .sidebar-area .add-widget a.social-link {
@@ -649,7 +651,8 @@ input:focus, textarea:focus {
       height: 259px;
       width: 350px;
       object-fit: cover;
-      border-radius: 8px; }
+      border-radius: 8px;
+      box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
   .single-blog-post .post-data {
     margin-left: 20px; }
     .single-blog-post .post-data .post-catagory {
