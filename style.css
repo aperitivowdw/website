@@ -620,7 +620,7 @@ input:focus, textarea:focus {
   background-color: #1a1b49; }
 
 /* :: 7.0 Blog Post Area */
-.sidebar-area {
+.sidebar-area .add-widget {
   border: 1px solid #212529;
   padding: 15px;
   border-radius: 8px;
