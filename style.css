@@ -1379,11 +1379,13 @@ input:focus, textarea:focus {
   .contact-area p {
     font-size: 18px; }
   .contact-area a.social-link {
-    font-size: 30px;
+    font-size: 16px;
     color: #212529;
-    font-weight: 700; }
-    .contact-area a.social-link i {
-      margin-right: 10px; }
+    margin-left: 20px; }
+  .contact-area i {
+    margin-right: 10px; }
+  .contact-area a.social-link:hover {
+    color: #feae04; }
 
 @media only screen and (max-width: 767px) {
   .contact-info-details {
