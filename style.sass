@@ -318,10 +318,12 @@ input:focus, textarea:focus
       @media only screen and (max-width: 767px)
         h4
           display: none
+
     .classy-navbar
       height: 100px
       padding: 0
       background-color: $blue
+      box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25)
 
       &-toggler
         @media only screen and (max-width: 992px)
@@ -718,7 +720,7 @@ input:focus, textarea:focus
 .catagory-featured-post
   position: relative
   z-index: 1
-  margin-top: 270px
+  margin-top: 175px
   @media only screen and (max-width: 767px)
     margin-top: 0
 
@@ -752,6 +754,16 @@ input:focus, textarea:focus
       margin-bottom: 0
       font-size: 14px
       font-weight: 500
+
+  .category-title
+    margin: 0 0 30px 0
+    padding: 10px 32px
+    border: 2px solid $aperitivo
+    border-radius: 8px
+    box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
+
+    h2, p
+      margin-top: 8px
 
   .cata-thumbnail
     text-align: center
