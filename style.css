@@ -432,6 +432,33 @@ input:focus, textarea:focus {
   background-color: #1a1b49; }
 
 /* :: 7.0 Blog Post Area */
+.article-title {
+  background-color: #1a1b49;
+  padding: 30px;
+  margin-left: 0;
+  margin-right: 0; }
+  .article-title__text {
+    color: #feae04;
+    font-size: 30px;
+    position: relative; }
+  .article-title__icon {
+    padding-left: 0; }
+    @media only screen and (max-width: 991px) {
+      .article-title__icon {
+        display: none; } }
+
+.post-authors-date {
+  display: flex; }
+  .post-authors-date p:first-of-type {
+    padding-right: 15px; }
+  .post-authors-date .post-author, .post-authors-date .post-date {
+    font-size: 14px;
+    color: #656565;
+    margin-bottom: 0; }
+  .post-authors-date .post-author {
+    font-weight: 700; }
+
+/* Sidebar-area */
 .sidebar-area .add-widget {
   border: 1px solid #212529;
   padding: 20px;

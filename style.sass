@@ -519,6 +519,37 @@ input:focus, textarea:focus
 
 /* :: 7.0 Blog Post Area
 
+.article-title
+  background-color: $blue
+  padding: 30px
+  margin:
+    left: 0
+    right: 0
+
+  &__text
+    color: $aperitivo
+    font-size: 30px
+    position: relative
+
+  &__icon
+    padding-left: 0
+    @media only screen and (max-width: 991px)
+      display: none
+
+.post-authors-date
+  display: flex
+  p:first-of-type
+    padding-right: 15px
+
+  .post-author, .post-date
+    font-size: 14px
+    color: #656565
+    margin-bottom: 0
+
+  .post-author
+    font-weight: 700
+/* Sidebar-area
+
 .sidebar-area
 
   .add-widget
@@ -907,7 +938,6 @@ input:focus, textarea:focus
     padding-top: 250px
   @media only screen and (max-width: 767px)
     padding-top: 150px
-
 
 @media only screen and (max-width: 767px)
   .contact-info-details
