@@ -379,18 +379,20 @@ input:focus, textarea:focus {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin-right: 20px; }
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
     .single-welcome-slide .welcome-post--minor {
       max-height: 228px;
       margin-bottom: 20px;
-      border-radius: 8px; }
+      border-radius: 8px;
+      margin-right: 0; }
     .single-welcome-slide .welcome-post img {
       -webkit-transition-duration: 600ms;
       transition-duration: 600ms;
       max-height: 456px;
       object-fit: cover;
-      min-height: 475px;
-      border-radius: 8px; }
+      min-height: 475px; }
     .single-welcome-slide .welcome-post:hover img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
