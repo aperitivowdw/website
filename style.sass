@@ -321,7 +321,10 @@ input:focus, textarea:focus
     .classy-navbar
       height: 100px
       padding: 0
-      background-color: $blue
+      background-color: $white
+      border: 1px solid $blue
+      border-bottom-left-radius: 8px
+      border-bottom-right-radius: 8px
       box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25)
 
       &-toggler
@@ -345,6 +348,7 @@ input:focus, textarea:focus
             height: 50px
             font-weight: 700
             transition: .50s
+            box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25)
 
             &:hover, &:focus
               background-color: $aperitivo-light
@@ -446,9 +450,12 @@ input:focus, textarea:focus
     position: relative
     z-index: 1
     overflow: hidden
+    margin-right: 20px
 
     &--minor
       max-height: 228px
+      margin-bottom: 20px
+      border-radius: 8px
 
     img
       -webkit-transition-duration: 600ms
@@ -456,6 +463,7 @@ input:focus, textarea:focus
       max-height: 456px
       object-fit: cover
       min-height: 475px
+      border-radius: 8px
 
     &:hover img
       -webkit-transform: scale(1.1)

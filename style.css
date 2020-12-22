@@ -277,7 +277,10 @@ input:focus, textarea:focus {
     .header-area .viral-news-main-menu .classy-navbar {
       height: 100px;
       padding: 0;
-      background-color: #1a1b49;
+      background-color: #fff;
+      border: 1px solid #1a1b49;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
       @media only screen and (max-width: 992px) {
         .header-area .viral-news-main-menu .classy-navbar-toggler {
@@ -295,7 +298,8 @@ input:focus, textarea:focus {
         font-size: 16px;
         height: 50px;
         font-weight: 700;
-        transition: 0.5s; }
+        transition: 0.5s;
+        box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
         .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
           background-color: #fcb418;
           background-color: #fff; }
@@ -374,15 +378,19 @@ input:focus, textarea:focus {
   .single-welcome-slide .welcome-post {
     position: relative;
     z-index: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-right: 20px; }
     .single-welcome-slide .welcome-post--minor {
-      max-height: 228px; }
+      max-height: 228px;
+      margin-bottom: 20px;
+      border-radius: 8px; }
     .single-welcome-slide .welcome-post img {
       -webkit-transition-duration: 600ms;
       transition-duration: 600ms;
       max-height: 456px;
       object-fit: cover;
-      min-height: 475px; }
+      min-height: 475px;
+      border-radius: 8px; }
     .single-welcome-slide .welcome-post:hover img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
