@@ -16,7 +16,6 @@ $white: #fff
   color: $aperitivo
 
 
-
 /* :: 1.0 Import Fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800")
 
@@ -44,6 +43,10 @@ $white: #fff
 body
   font-family: "Montserrat", sans-serif
   font-size: 14px
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1200px
 
 h1, h2, h3, h4, h5, h6
   color: $black
@@ -280,11 +283,14 @@ input:focus, textarea:focus
     width: 100px
 
 /* :: 4.0 Header Area
-
 .header-area
   position: relative
   z-index: 100
   width: 100%
+
+  .nav-brand
+    @media only screen and (min-width: 1140px)
+      display: none
 
   /* Search Form Area
 
@@ -319,13 +325,12 @@ input:focus, textarea:focus
           display: none
 
     .classy-navbar
-      height: 100px
+      position: fixed
       padding: 0
       background-color: $white
-      border: 1px solid $blue
-      border-bottom-left-radius: 8px
-      border-bottom-right-radius: 8px
       box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25)
+      @media only screen and (max-width: 992px)
+        position: relative
 
       &-toggler
         @media only screen and (max-width: 992px)
@@ -432,15 +437,13 @@ input:focus, textarea:focus
 /* :: 6.0 Welcome Slides Area
 
 .welcome-slide-area
-  padding: 300px 0 90px
+  padding: 50px 0 70px
   position: relative
   z-index: 1
-
-  @media only screen and (min-width: 768px) and (max-width: 991px)
-    padding: 120px 0 90px
-
+  @media only screen and (max-width: 991px)
+    padding: 250px 0 70px
   @media only screen and (max-width: 767px)
-    padding: 80px 0 90px
+    padding: 120px 0 70px
 
 .single-welcome-slide
   position: relative
@@ -451,13 +454,11 @@ input:focus, textarea:focus
     z-index: 1
     overflow: hidden
     margin-right: 20px
-    border-radius: 8px
     box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
 
     &--minor
       max-height: 228px
       margin-bottom: 20px
-      border-radius: 8px
       margin-right: 0
 
     img
@@ -505,13 +506,10 @@ input:focus, textarea:focus
         padding: 0 10px
         font-size: 18px
 
-@media only screen and (max-width: 767px)
-  .single-welcome-slide .welcome-post .post-content .post-title
-    font-size: 18px
-
+@media only screen and (max-width: 991px)
   .single-welcome-slide .welcome-post
-    img
-      min-height: 0
+    margin-right: 0
+    margin-bottom: 20px
 
 @media only screen and (min-width: 768px) and (max-width: 991px)
   .single-welcome-slide .welcome-post
@@ -523,10 +521,24 @@ input:focus, textarea:focus
     display: -ms-flexbox
     display: flex
 
+@media only screen and (max-width: 767px)
+  .single-welcome-slide .welcome-post .post-content .post-title
+    font-size: 18px
+
+  .single-welcome-slide .welcome-post
+    img
+      min-height: 0
+
 .breakpoint-on .classy-navbar .classy-menu
   background-color: $blue
 
 /* :: 7.0 Blog Post Area
+
+.blog-area
+  padding-top: 50px
+  @media only screen and (max-width: 991px)
+    padding-top: 200px
+
 
 .article-title
   background-color: $blue
@@ -564,11 +576,13 @@ input:focus, textarea:focus
   .add-widget
     border: 1px solid $black
     padding: 20px
-    border-radius: 8px
     box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
 
     p
       font-size: 14px
+
+    @media only screen and (max-width: 991px)
+      display: none
 
 .single-blog-post
   position: relative
@@ -587,7 +601,6 @@ input:focus, textarea:focus
       height: 350px
       width: 350px
       object-fit: cover
-      border-radius: 8px
       box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
 
     .serial-number
@@ -760,9 +773,11 @@ input:focus, textarea:focus
 .catagory-featured-post
   position: relative
   z-index: 1
-  margin-top: 175px
+  @media only screen and (max-width: 991px)
+    padding-top: 200px
+
   @media only screen and (max-width: 767px)
-    margin-top: 0
+    padding-top: 120px
 
     h2
       text-decoration: none
@@ -940,11 +955,11 @@ input:focus, textarea:focus
     transition-duration: 500ms
 
 .contact-area
-  padding-top: 380px
+  padding-top: 50px
   position: relative
   z-index: 1
   @media only screen and (max-width: 991px)
-    padding-top: 250px
+    padding-top: 200px
   @media only screen and (max-width: 767px)
     padding-top: 150px
 
