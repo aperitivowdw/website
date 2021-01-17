@@ -48,15 +48,6 @@ a {
   text-decoration-line: none;
   outline: 0 solid transparent; }
 
-a.social-link {
-  font-size: 16px;
-  color: #212529;
-  margin-left: 20px; }
-  a.social-link:hover {
-    color: #feae04; }
-  a.social-link i {
-    margin-right: 10px; }
-
 b, strong {
   font-weight: 700; }
 
@@ -294,6 +285,14 @@ input:focus, textarea:focus {
       .header-area .viral-news-main-menu .classy-navbar .classy-menu {
         margin: 0 auto; }
       .header-area .viral-news-main-menu .classy-navbar .classynav ul li a {
+        padding: 0; }
+      .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-logo {
+        background-color: transparent;
+        box-shadow: 0; }
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-logo img {
+          height: 50px;
+          margin-top: -6px; }
+      .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link {
         background-color: #feae04;
         border: none;
         color: #212529;
@@ -306,10 +305,10 @@ input:focus, textarea:focus {
         font-weight: 700;
         transition: 0.5s;
         box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
-        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li a:focus {
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link:hover, .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link:focus {
           background-color: #fcb418;
           background-color: #fff; }
-        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a i {
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link i {
           margin-right: 5px; }
       .header-area .viral-news-main-menu .classy-navbar .classynav ul li.active a {
         color: #feae04;
@@ -483,6 +482,15 @@ input:focus, textarea:focus {
     font-weight: 700; }
 
 /* Sidebar-area */
+.sidebar-area .social-link-list {
+  display: flex; }
+.sidebar-area a.social-link {
+  font-size: 30px;
+  margin-left: 20px; }
+  .sidebar-area a.social-link:hover {
+    color: #feae04; }
+  .sidebar-area a.social-link i {
+    margin-right: 10px; }
 .sidebar-area .add-widget {
   border: 1px solid #212529;
   padding: 20px;

@@ -69,17 +69,6 @@ a
   text-decoration-line: none
   outline: 0 solid transparent
 
-a.social-link
-  font-size: 16px
-  color: $black
-  margin-left: 20px
-
-  &:hover
-    color: $aperitivo
-
-  i
-    margin-right: 10px
-
 b, strong
   font-weight: 700
 
@@ -342,6 +331,15 @@ input:focus, textarea:focus
       .classynav
         ul li
           a
+            padding: 0
+          .nav-logo
+            background-color: transparent
+            box-shadow: 0
+            img
+              height: 50px
+              margin-top: -6px
+
+          .nav-link
             background-color: $aperitivo
             border: none
             color: $black
@@ -572,6 +570,19 @@ input:focus, textarea:focus
 /* Sidebar-area
 
 .sidebar-area
+
+  .social-link-list
+    display: flex
+
+  a.social-link
+    font-size: 30px
+    margin-left: 20px
+
+    &:hover
+      color: $aperitivo
+
+    i
+      margin-right: 10px
 
   .add-widget
     border: 1px solid $black
