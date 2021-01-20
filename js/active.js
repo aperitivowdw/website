@@ -131,20 +131,4 @@
         $.preventDefault();
     });
 
-    // :: 11.0 Search Form Active Code
-    var searchbtn = $('#searchbtn');
-    var viral_search_form = $('.viral-search-form');
-    var navbar_toggler = $('.classy-navbar-toggler');
-
-    searchbtn.on('click', function () {
-        $(this).toggleClass('fa-close');
-        viral_search_form.toggleClass('active');
-    });
-    navbar_toggler.on('click', function () {
-        viral_search_form.removeClass('active');
-    });
-    navbar_toggler.on('click', function () {
-        searchbtn.removeClass('fa-close');
-    });
-
 })(jQuery);
