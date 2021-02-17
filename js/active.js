@@ -10,92 +10,14 @@
         });
     });
 
-    // :: 2.0 Slides Active Code
-    if ($.fn.owlCarousel) {
-
-        var heroSlide = $(".hero-slides");
-        heroSlide.owlCarousel({
-            items: 3,
-            margin: 30,
-            loop: true,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 1000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                }
-            }
-        });
-
-        var welcomeSlide = $(".welcome-slides");
-        welcomeSlide.owlCarousel({
-            items: 1,
-            margin: 0,
-            loop: true,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 8000,
-            smartSpeed: 1000,
-            autoplayHoverPause: true
-        });
-
-        welcomeSlide.on("translate.owl.carousel", function () {
-            var slideLayer = $("[data-animation]");
-            slideLayer.each(function () {
-                var anim_name = $(this).data('animation');
-                $(this).removeClass('animated ' + anim_name).css('opacity', '0');
-            });
-        });
-
-        welcomeSlide.on('translated.owl.carousel', function () {
-            var slideLayer = welcomeSlide.find('.owl-item.active').find("[data-animation]");
-            slideLayer.each(function () {
-                var anim_name = $(this).data('animation');
-                $(this).addClass('animated ' + anim_name).css('opacity', '1');
-            });
-        });
-
-        $("[data-delay]").each(function () {
-            var anim_del = $(this).data('delay');
-            $(this).css('animation-delay', anim_del);
-        });
-
-        $("[data-duration]").each(function () {
-            var anim_dur = $(this).data('duration');
-            $(this).css('animation-duration', anim_dur);
-        });
-    }
-
-    // :: 3.0 Newsticker Active Code
-    if ($.fn.simpleTicker) {
-        $.simpleTicker($("#breakingNewsTicker"), {
-            speed: 1000,
-            delay: 3000,
-            easing: 'swing',
-            effectType: 'roll'
-        });
-    }
     // :: 4.0 Nav Active Code
     if ($.fn.classyNav) {
         $('#viralnewsNav').classyNav();
-    }
 
-    // :: 5.0 Gallery Active Code
-    if ($.fn.magnificPopup) {
-        $('.videoPlayer').magnificPopup({
-            type: 'iframe'
-        });
+        // $('.classy-navbar').on('click', (e) => {
+        //     $('.classy-menu').toggle('.menu-on')
+        //     });
+
     }
 
     // :: 6.0 ScrollUp Active Code
@@ -106,24 +28,11 @@
         });
     }
 
-    // :: 7.0 CouterUp Active Code
-    if ($.fn.counterUp) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 2000
-        });
-    }
-
     // :: 8.0 Sticky Active Code
     if ($.fn.sticky) {
         $("#stickyMenu").sticky({
             topSpacing: 0
         });
-    }
-
-    // :: 9.0 wow Active Code
-    if (browserWindow.width() > 767) {
-        new WOW().init();
     }
 
     // :: 10.0 prevent default a click
