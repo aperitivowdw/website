@@ -6,7 +6,13 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
+  <loc>https://www.aperitivowdw.com/2021/espansione-parchi-disney-california.html</loc>
+    <lastmod>2021-03-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
   <loc>https://www.aperitivowdw.com/2021/ratatouille-e-magicmobile.html</loc>
     <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
@@ -19,7 +25,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.aperitivowdw.com/2021/leave-a-legacy-disney-world.html</loc>
+    <loc>https://www.aperitivowdw.com/2021/leave-a-leagacy-disney-world.html</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
