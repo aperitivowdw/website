@@ -8,6 +8,7 @@ $aperitivo:	#feae04
 $aperitivo-light: #fcb418
 $blue: #1a1b49
 $white: #fff
+$green: #1DB954
 
 .pink
   color: $pink
@@ -375,13 +376,26 @@ input:focus, textarea:focus
             i
               margin-right: 5px
 
-          &.active a
-            color: $aperitivo
-            border-bottom: 4px solid $aperitivo
+            &--spotify
+              background-color: $green
+        @media only screen and (min-width: 992px) and (max-width: 1320px)
+          ul li
+            .nav-link
+              font-size: 14px
+              padding: 10px 4px
+              background-color: white
+              box-shadow: none
 
-          @media only screen and (max-width: 991px)
-            a
-              margin: 10px 0
+              i
+                margin-left: 5px
+
+        &.active a
+          color: $aperitivo
+          border-bottom: 4px solid $aperitivo
+
+        @media only screen and (max-width: 991px)
+          a
+            margin: 10px 0
 
   .is-sticky #stickyMenu
     background-color: #fff
@@ -456,11 +470,14 @@ input:focus, textarea:focus
   @media only screen and (max-width: 991px)
     padding: 250px 0 70px
   @media only screen and (max-width: 767px)
-    padding: 120px 0 70px
+    padding: 120px 0 20px
 
 .single-welcome-slide
   position: relative
   z-index: 1
+
+  @media only screen and (max-width: 767px)
+    display: none
 
   .welcome-post
     position: relative

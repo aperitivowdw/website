@@ -325,11 +325,21 @@ input:focus, textarea:focus {
           background-color: #fff; }
         .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link i {
           margin-right: 5px; }
-      .header-area .viral-news-main-menu .classy-navbar .classynav ul li.active a {
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link--spotify {
+          background-color: #1DB954; }
+      @media only screen and (min-width: 992px) and (max-width: 1320px) {
+        .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link {
+          font-size: 14px;
+          padding: 10px 4px;
+          background-color: white;
+          box-shadow: none; }
+          .header-area .viral-news-main-menu .classy-navbar .classynav ul li .nav-link i {
+            margin-left: 5px; } }
+      .header-area .viral-news-main-menu .classy-navbar .classynav.active a {
         color: #feae04;
         border-bottom: 4px solid #feae04; }
       @media only screen and (max-width: 991px) {
-        .header-area .viral-news-main-menu .classy-navbar .classynav ul li a {
+        .header-area .viral-news-main-menu .classy-navbar .classynav a {
           margin: 10px 0; } }
   .header-area .is-sticky #stickyMenu {
     background-color: #fff;
@@ -390,11 +400,14 @@ input:focus, textarea:focus {
       padding: 250px 0 70px; } }
   @media only screen and (max-width: 767px) {
     .welcome-slide-area {
-      padding: 120px 0 70px; } }
+      padding: 120px 0 20px; } }
 
 .single-welcome-slide {
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 767px) {
+    .single-welcome-slide {
+      display: none; } }
   .single-welcome-slide .welcome-post {
     position: relative;
     z-index: 1;
@@ -403,6 +416,7 @@ input:focus, textarea:focus {
     box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
     .single-welcome-slide .welcome-post--minor {
       max-height: 228px;
+      min-height: 228px;
       margin-bottom: 20px;
       margin-right: 0; }
     .single-welcome-slide .welcome-post img {
