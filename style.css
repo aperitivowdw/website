@@ -29,7 +29,6 @@ body {
   .container {
     max-width: 1200px; } }
 h1, h2, h3, h4, h5, h6 {
-  color: #212529;
   line-height: 1.3;
   font-weight: 700; }
 
@@ -48,12 +47,11 @@ h4, .h4 {
 h5, .h5 {
   font-size: 14px; }
 
-p {
-  color: #212529;
+p, .p {
   font-size: 16px;
   line-height: 2;
   font-weight: 100; }
-  p.small {
+  p.small, .p.small {
     font-size: 10px !important; }
 
 a {
@@ -409,6 +407,31 @@ input:focus, textarea:focus {
   .add-post-button {
     margin-left: 15px; } }
 /* :: 6.0 Welcome Slides Area */
+.header-picture {
+  position: relative;
+  height: 600px;
+  margin-bottom: 40px;
+  background-image: url("../img/bg-img/header-pic.webp");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 991px) {
+    .header-picture {
+      display: none; } }
+
+.header-welcome {
+  position: absolute;
+  bottom: 0;
+  color: #fff; }
+  .header-welcome__text {
+    color: #212529;
+    background-color: #feae04;
+    padding: 20px 30px; }
+    .header-welcome__text p {
+      margin-bottom: 0; }
+  @media only screen and (max-width: 991px) {
+    .header-welcome {
+      display: none; } }
+
 .welcome-slide-area {
   padding: 50px 0 70px;
   position: relative;
