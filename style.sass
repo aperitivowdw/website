@@ -9,7 +9,7 @@ $aperitivo-light: #fcb418
 $blue: #1a1b49
 $white: #fff
 $green: #1DB954
-
+$box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.45)
 .pink
   color: $pink
 
@@ -252,9 +252,13 @@ img.post-pic
   @media only screen and (max-width: 991px)
     display: block
 
+.gcse-title
+  @media only screen and (max-width: 991px)
+    display: none
+
 .gsc-control-cse
   padding: 0 !important
-  margin-bottom: 20px
+  margin-bottom: 50px
 
 input:focus, textarea:focus
   outline: none
@@ -281,8 +285,7 @@ input:focus, textarea:focus
   &:hover
     background-color: #000000
 
-@media only screen and (max-width: 767px)
-  #scrollUp
+  @media only screen and (max-width: 767px)
     bottom: 30px
     right: 30px
 
@@ -333,15 +336,14 @@ input:focus, textarea:focus
         margin-left: 30px
         color: #fff
 
-      @media only screen and (max-width: 767px)
-        h4
+        @media only screen and (max-width: 767px)
           display: none
 
     .classy-navbar
       position: fixed
       padding: 0
       background-color: $white
-      box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25)
+      box-shadow: $box-shadow
       @media only screen and (max-width: 992px)
         position: relative
 
@@ -485,6 +487,7 @@ input:focus, textarea:focus
   background-image: url("../img/bg-img/header-pic.webp")
   background-position: 50% 50%
   background-repeat: no-repeat
+  box-shadow: $box-shadow
   @media only screen and (max-width: 991px)
     display: none
 
@@ -492,117 +495,15 @@ input:focus, textarea:focus
   position: absolute
   bottom: 0
   color: $white
+
   &__text
-    color: $black
+    color: $white
     background-color: $aperitivo
     padding: 20px 30px
     p
       margin-bottom: 0
   @media only screen and (max-width: 991px)
     display: none
-
-
-.welcome-slide-area
-  padding: 50px 0 70px
-  position: relative
-  z-index: 1
-  @media only screen and (max-width: 991px)
-    padding: 250px 0 70px
-  @media only screen and (max-width: 767px)
-    padding: 120px 0 20px
-
-.single-welcome-slide
-  position: relative
-  z-index: 1
-
-  @media only screen and (max-width: 767px)
-    display: none
-
-  .welcome-post
-    position: relative
-    z-index: 1
-    overflow: hidden
-    margin-right: 20px
-    box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
-
-    &--minor
-      max-height: 228px
-      min-height: 228px
-      margin-bottom: 20px
-      margin-right: 0
-
-    img
-      -webkit-transition-duration: 600ms
-      transition-duration: 600ms
-      max-height: 456px
-      object-fit: cover
-      min-height: 475px
-
-      @media only screen and (max-width: 991px)
-        min-width: 690px
-      @media only screen and (max-width: 767px)
-        min-width: 0
-
-    &:hover img
-      -webkit-transform: scale(1.1)
-      transform: scale(1.1)
-
-    .post-content
-      position: absolute
-      width: 80%
-      bottom: 10%
-      left: 10%
-      z-index: 5
-
-      .post-title
-        background-color: #231f1f
-        padding: 0 15px 5px
-        font-size: 30px
-        font-weight: 600
-        color: #fff
-        display: inline-block
-
-        &:hover
-          color: $aperitivo
-
-      p
-        font-size: 12px
-        color: #fff
-        margin-bottom: 0
-        font-weight: 600
-
-    &.style-2
-      img
-        height: 208px
-        object-fit: cover
-        object-position: 0% 23%
-
-      .post-title
-        padding: 0 10px
-        font-size: 18px
-
-@media only screen and (max-width: 991px)
-  .single-welcome-slide .welcome-post
-    margin-right: 0
-    margin-bottom: 20px
-
-@media only screen and (min-width: 768px) and (max-width: 991px)
-  .single-welcome-slide .welcome-post
-    img
-      min-height: 0
-
-  .welcome-posts--
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-
-@media only screen and (max-width: 767px)
-  .single-welcome-slide .welcome-post .post-content .post-title
-    font-size: 18px
-
-  .single-welcome-slide .welcome-post
-    img
-      min-height: 0
 
 .breakpoint-on .classy-navbar .classy-menu
   background-color: $blue
@@ -688,6 +589,11 @@ input:focus, textarea:focus
   position: relative
   z-index: 1
 
+  .post-data
+    h6
+      color: $black
+      padding-top: 20px
+
   .post-thumb
     -webkit-box-flex: 0
     -ms-flex: 0 0 130px
@@ -701,7 +607,7 @@ input:focus, textarea:focus
       height: 350px
       width: 350px
       object-fit: cover
-      box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
+      box-shadow: $box-shadow
 
     .serial-number
       font-size: 14px
@@ -870,61 +776,16 @@ input:focus, textarea:focus
     margin-bottom: 50px
     font-weight: 600
 
-.catagory-featured-post
-  position: relative
-  z-index: 1
-  @media only screen and (max-width: 991px)
-    padding-top: 200px
-
-  @media only screen and (max-width: 767px)
-    padding-top: 120px
-
-    h2
-      text-decoration: none
-      text-decoration-line: none
-      -webkit-transition-duration: 500ms
-      transition-duration: 500ms
-
-      &:hover
-        color: $aperitivo
-
-    .post-meta
-      .post-author
-        font-size: 14px
-        color: #656565
-        font-weight: 700
-        margin-bottom: 0
-
-        a
-          color: #231f1f
-          font-weight: 700
-          font-size: 14px
-
-      .post-date
-        color: #656565
-        font-size: 12px
-
-    .post-excerp
-      color: #656565
-      margin-bottom: 0
-      font-size: 14px
-      font-weight: 500
-
-  .cata-thumbnail
-    text-align: center
-
-    img
-      height: 355px
-      width: 635px
-      object-fit: cover
-      object-position: 0 95%
-
 .category-title
   margin: 0 0 30px 0
   padding: 10px 32px
   border: 2px solid $aperitivo
   border-radius: 8px
-  box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
+  box-shadow: $box-shadow
+  @media only screen and (max-width: 991px)
+    margin: 15em 0 30px 0
+  @media only screen and (max-width: 767px)
+    margin: 7em 0 30px 0
 
   h2, p
     margin: 8px
@@ -1020,55 +881,3 @@ input:focus, textarea:focus
   .footer-area .bottom-footer-area
     padding: 20px 0 30px
 
-/* :: 9.0 Contact Area
-
-.single-contact-information
-  position: relative
-  z-index: 1
-
-  h6
-    font-size: 14px
-    border-bottom: 2px solid #e20378
-    display: inline-block
-    color: #e20378
-
-.contact-form-area
-  .form-control
-    height: 52px
-    width: 100%
-    background-color: #f3f5f8
-    font-size: 12px
-    font-style: italic
-    margin-bottom: 15px
-    border: none
-    border-radius: 0
-    padding: 0 20px
-    -webkit-transition-duration: 500ms
-    transition-duration: 500ms
-    border-bottom: 3px solid
-    border-color: transparent
-    font-weight: 500
-
-    &:focus
-      box-shadow: none
-      border-color: #e20378
-
-  textarea.form-control
-    height: 200px
-    padding: 15px 20px
-    -webkit-transition-duration: 500ms
-    transition-duration: 500ms
-
-.contact-area
-  padding-top: 50px
-  position: relative
-  z-index: 1
-  @media only screen and (max-width: 991px)
-    padding-top: 200px
-  @media only screen and (max-width: 767px)
-    padding-top: 150px
-
-@media only screen and (max-width: 767px)
-  .contact-info-details
-    -ms-flex-wrap: wrap
-    flex-wrap: wrap
