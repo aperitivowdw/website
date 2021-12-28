@@ -9,6 +9,7 @@ $aperitivo-light: #fcb418
 $blue: #1a1b49
 $white: #fff
 $green: #1DB954
+$grey: rgb(128, 128, 128)
 $box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.45)
 .pink
   color: $pink
@@ -19,6 +20,7 @@ $box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.45)
 
 /* :: 1.0 Import Fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800")
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800")
 
 /* :: 2.0 Import All CSS
 @import url(css/bootstrap.min.css)
@@ -42,7 +44,7 @@ $box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.45)
   padding: 0
 
 body
-  font-family: "DB Sans", sans-serif
+  font-family: "Roboto", sans-serif
   font-size: 16px
 
 @media (min-width: 1200px)
@@ -286,7 +288,6 @@ input:focus, textarea:focus
       position: fixed
       padding: 0
       background-color: $white
-      box-shadow: $box-shadow
       @media only screen and (max-width: 992px)
         position: relative
 
@@ -427,24 +428,33 @@ input:focus, textarea:focus
   position: relative
   height: 600px
   margin-bottom: 40px
-  background-image: url("../img/bg-img/header-pic.webp")
+  background: linear-gradient(180deg, $blue 5%, transparent 60%), url("../img/bg-img/header-pic-2.webp")
   background-position: 50% 50%
   background-repeat: no-repeat
   box-shadow: $box-shadow
+  background-size: cover
   @media only screen and (max-width: 991px)
     display: none
 
 .header-welcome
   position: absolute
-  bottom: 0
+  width: 100%
+  text-align: center
   color: $white
 
   &__text
-    color: $white
-    background-color: $aperitivo
-    padding: 20px 30px
-    p
+    text-align: center
+    color: $aperitivo
+    padding: 40px 30px
+    h1
+      font-size: 60px
+      font-weight: 900
+      font-style: italic
+      text-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
+    h2
+      font-size: 20px
       margin-bottom: 0
+      text-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
   @media only screen and (max-width: 991px)
     display: none
 
@@ -518,7 +528,7 @@ input:focus, textarea:focus
       margin-right: 10px
 
   .add-widget
-    border: 1px solid $black
+    border: 1px solid $grey
     padding: 20px
     box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
 

@@ -1,6 +1,7 @@
 /* [Master Stylesheet] */
 /* :: 0.0 Constants + classes */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800");
 @import url(css/bootstrap.min.css);
 @import url(css/owl.carousel.min.css);
 @import url(css/animate.css);
@@ -22,7 +23,7 @@
   padding: 0; }
 
 body {
-  font-family: "DB Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px; }
 
 @media (min-width: 1200px) {
@@ -248,8 +249,7 @@ input:focus, textarea:focus {
     .header-area .viral-news-main-menu .classy-navbar {
       position: fixed;
       padding: 0;
-      background-color: #fff;
-      box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.45); }
+      background-color: #fff; }
       @media only screen and (max-width: 992px) {
         .header-area .viral-news-main-menu .classy-navbar {
           position: relative; } }
@@ -360,24 +360,33 @@ input:focus, textarea:focus {
   position: relative;
   height: 600px;
   margin-bottom: 40px;
-  background-image: url("../img/bg-img/header-pic.webp");
+  background: linear-gradient(180deg, #1a1b49 5%, transparent 60%), url("../img/bg-img/header-pic-2.webp");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.45); }
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.45);
+  background-size: cover; }
   @media only screen and (max-width: 991px) {
     .header-picture {
       display: none; } }
 
 .header-welcome {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  text-align: center;
   color: #fff; }
   .header-welcome__text {
-    color: #fff;
-    background-color: #ee9202;
-    padding: 20px 30px; }
-    .header-welcome__text p {
-      margin-bottom: 0; }
+    text-align: center;
+    color: #ee9202;
+    padding: 40px 30px; }
+    .header-welcome__text h1 {
+      font-size: 60px;
+      font-weight: 900;
+      font-style: italic;
+      text-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
+    .header-welcome__text h2 {
+      font-size: 20px;
+      margin-bottom: 0;
+      text-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 991px) {
     .header-welcome {
       display: none; } }
@@ -441,7 +450,7 @@ input:focus, textarea:focus {
   .sidebar-area a.social-link i {
     margin-right: 10px; }
 .sidebar-area .add-widget {
-  border: 1px solid #212529;
+  border: 1px solid gray;
   padding: 20px;
   box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
   .sidebar-area .add-widget p {
