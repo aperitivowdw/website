@@ -28,7 +28,7 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px; } }
+    max-width: 1800px; } }
 p, .p {
   font-size: 16px;
   line-height: 2;
@@ -358,12 +358,10 @@ input:focus, textarea:focus {
 /* :: 6.0 Welcome Slides Area */
 .header-picture {
   position: relative;
-  height: 600px;
-  margin-bottom: 40px;
-  background: linear-gradient(180deg, #1a1b49 6%, transparent 60%), url("../img/bg-img/header-pic-2.webp");
+  height: 200px;
+  margin-bottom: 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.45);
   background-size: cover; }
   @media only screen and (max-width: 991px) {
     .header-picture {
@@ -377,16 +375,17 @@ input:focus, textarea:focus {
   .header-welcome__text {
     text-align: center;
     color: #ee9202;
-    padding: 60px 30px; }
+    padding: 60px 30px;
+    font-size: 50px;
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px, rgba(255, 255, 255, 0.4) 0px -4px 30px; }
     .header-welcome__text h1 {
       font-size: 60px;
       font-weight: 900;
-      font-style: italic;
-      text-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
+      font-style: italic; }
     .header-welcome__text h2 {
       font-size: 20px;
       margin-bottom: 0;
-      text-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25); }
+      text-shadow: 0; }
   @media only screen and (max-width: 991px) {
     .header-welcome {
       display: none; } }
@@ -475,8 +474,7 @@ input:focus, textarea:focus {
     .single-blog-post .post-thumb img {
       height: 350px;
       width: 350px;
-      object-fit: cover;
-      box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.45); }
+      object-fit: cover; }
     .single-blog-post .post-thumb .serial-number {
       font-size: 14px;
       font-weight: 600;

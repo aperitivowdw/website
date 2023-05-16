@@ -49,7 +49,7 @@ body
 
 @media (min-width: 1200px)
   .container
-    max-width: 1200px
+    max-width: 1800px
 
 p, .p
   font-size: 16px
@@ -426,12 +426,13 @@ input:focus, textarea:focus
 /* :: 6.0 Welcome Slides Area
 .header-picture
   position: relative
-  height: 600px
-  margin-bottom: 40px
-  background: linear-gradient(180deg, $blue 6%, transparent 60%), url("../img/bg-img/header-pic-2.webp")
+  // height: 600px
+  height: 200px
+  margin-bottom: 60px
+  // background: linear-gradient(180deg, $blue 6%, transparent 60%), url("../img/bg-img/header-pic-2.webp")
   background-position: 50% 50%
   background-repeat: no-repeat
-  box-shadow: $box-shadow
+  // box-shadow: $box-shadow
   background-size: cover
   @media only screen and (max-width: 991px)
     display: none
@@ -446,15 +447,16 @@ input:focus, textarea:focus
     text-align: center
     color: $aperitivo
     padding: 60px 30px
+    font-size: 50px
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px, rgba(255, 255, 255, 0.4) 0px -4px 30px
     h1
       font-size: 60px
       font-weight: 900
       font-style: italic
-      text-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
     h2
       font-size: 20px
       margin-bottom: 0
-      text-shadow: 0 8px 24px -12px rgba(0,0,0,0.25)
+      text-shadow: 0
   @media only screen and (max-width: 991px)
     display: none
 
@@ -560,7 +562,7 @@ input:focus, textarea:focus
       height: 350px
       width: 350px
       object-fit: cover
-      box-shadow: $box-shadow
+      // box-shadow: $box-shadow
 
     .serial-number
       font-size: 14px
